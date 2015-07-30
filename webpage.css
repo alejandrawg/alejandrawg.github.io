@@ -1,0 +1,382 @@
+/*
+   Web page
+   Author: Alejandra Wessolossky
+   File name: prueba.css
+   supporting file: 
+*/
+@font-face
+	 {
+    	font-family: myfont;
+    	src: url(fonts/myfont.otf);
+    	font-weight: bold;
+	}
+
+
+#container
+	{
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+
+    }
+body
+	{
+		background-color: #FFFFFF;
+		font-family: 'Lucida Grande', Helvetica, Arial, Sans-Serif;
+		color: #1F1F2E;
+	}
+	
+header
+	{	
+		padding-top: 0;
+		padding-bottom: auto;
+		margin-top: auto;
+	}
+
+h1	
+	{
+		text-align: center;
+		font-size: 5.5em;
+		color: #1F1F2E;
+		text-shadow: 3px 3px #E0A3FF;
+		font-family: myfont;
+		font-weight: bold;
+		padding-top: 130px;
+	} 
+
+#nav 
+	{
+		background-color: #000000;
+		text-align: center;
+		position: fixed;
+		left: 0;
+		top: 0;
+		width: 100%;
+		z-index: 10000;
+		cursor: default;
+	}
+
+#nav ul 
+	{
+		margin-bottom: 5px;
+		padding-left: 0;
+	}
+
+#nav li 
+	{
+		display: inline-block;
+		margin-bottom: 1px;
+	}
+
+#nav a 
+	{
+		position: relative;
+		display: block;
+		color: #FFFFFF;
+		text-decoration: none;
+		outline: 0;
+	}
+	
+#nav a:hover
+	{
+		color: #FFFFFF !important;
+	}
+
+#nav a.active:before 
+	{
+		content: '';
+		display: block;
+		position: absolute;
+		bottom: -0.6em;
+		left: 50%;
+		margin-left: -0.75em;
+		border-left: solid 0.75em transparent;
+		border-right: solid 0.75em transparent;
+		border-top: solid 0.6em #282828;
+	}
+.button li 
+	{
+   		border-top: 1px solid #000000;
+   		background: #000000;
+   		background: -webkit-gradient(linear, left top, left bottom, from(#000000), to(#000000));
+   		background: -webkit-linear-gradient(top, #000000, #000000);
+   		background: -moz-linear-gradient(top, #000000, #000000);
+   		background: -ms-linear-gradient(top, #000000, #000000);
+   		background: -o-linear-gradient(top, #000000, #000000);
+   		padding: 11.5px 43px;
+   		-webkit-border-radius: 13px;
+   		-moz-border-radius: 13px;
+   		border-radius: 13px;
+   		-webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   		-moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   		box-shadow: rgba(0,0,0,1) 0 1px 0;
+   		text-shadow: rgba(0,0,0,.4) 0 1px 0;
+   		color: white;
+   		font-size: 16px;
+   		font-weight: bold;
+   		font-family: 'Lucida Grande', Helvetica, Arial, Sans-Serif;
+   		text-decoration: none;
+   		vertical-align: middle;
+  	 }
+.button li:hover 
+	{
+   		border-top-color: #3c4145;
+   		background: #3c4145;
+   		color: #ccc;
+   	}
+.button li:active 
+	{
+   		border-top-color: #50585e;
+   		background: #50585e;
+  	 }
+
+.dropdown
+	{
+		position: relative;
+	}
+  	 
+.dropdown:after 
+	{
+		content: "\25BC";
+		font-size: .5em;
+		display: block;
+		position: absolute;
+		top: 38%;
+		right: 12%;
+	}
+.drop
+	{
+		position: absolute;
+		display: none;
+	}
+
+.drop li
+	{
+		color: white;
+   		font-size: 16px;
+   		font-weight: bold;
+   		font-family: 'Lucida Grande', Helvetica, Arial, Sans-Serif;
+   		text-decoration: none;
+   		vertical-align: middle;
+   		border-radius: 13px;
+   		padding: 11.5px 80px;
+   		border-top: 1px solid #000000;
+   		background: #000000;
+   		margin-top: 18px;
+	}
+
+.dropdown:hover > .drop 
+	{
+		display: block;
+	}
+	
+.BoxStyleOne
+	{
+		background-color: #FFFFFF;
+		padding-bottom: 100px;
+		padding-top: 5px;
+		overflow: hidden;
+		margin-top: 80px;
+
+		
+	}
+  	 
+.BoxStyleOne p
+	{
+		text-align: center;
+		font-size: 1.5em;
+		color: #8F8F96;
+		padding-top: 5px;
+	}
+
+.BoxStyleTwo
+	{
+		background-color: #F0F0F5;
+		overflow: hidden;
+		padding-bottom: 100px;
+		padding-top: 50px;
+
+	}
+
+h2
+	{	
+		padding-bottom: 30px;
+		text-align: center;
+		color: #1F1F2E;
+		font-size: 2em;
+		font-weight: bold;
+	
+	}
+	
+.boxes
+	{
+		padding-left: 130px;	
+	}
+	
+.box {
+		background: #FFFFFF;	
+		box-shadow: 0px 0px 1px #888888;
+		text-align: center;
+		box-sizing: border-box;
+		width: 370px; 
+		margin-left: 15px;
+		padding: 3em 2em 3.5em 2em;
+		float: left;
+		margin-bottom: 15px;
+		height: 500px;	
+		
+	}
+.box h3 
+	{
+		font-size: 1.25em;
+	}
+
+.box p
+	{
+		font-size: 100%;
+		color: #A6A6A6;
+		line-height: 40px;
+		font-family: 'Lucida Grande', Helvetica, Arial, Sans-Serif;
+	
+	}
+	
+.BoxStyleThree
+	{
+		background-color: #F5E0FF;
+	}
+
+.boxColor
+	{
+		background-color: #F0F0F5;
+		height: 250px;
+	}
+.boxColor a
+	{
+		text-decoration: none;
+	}
+
+footer
+	{
+		background-color: #000000;
+		color: #FFFFFF;
+		padding-top: 20px;
+		padding-bottom: 20px;
+		font-size:.80em;
+		font-style: italic;
+		text-align: center;
+		clear: both;
+	}
+
+.postBox
+	{
+		margin-top: 50px;
+		padding-top: 50px;
+	}
+
+.postBox p
+	{
+		text-align: center;
+		font-size: 1.1em;
+	}
+	
+.postBox h2
+	{
+		padding-bottom: 30px;
+		text-align: center;
+		color: #1F1F2E;
+		font-size: 2em;
+		font-weight: bold;
+		margin-top: 0;
+	}
+
+form
+	{
+		margin-left: 470px;
+		margin-bottom: 20px;
+
+	}
+
+fieldset
+	 {
+  		border: none;
+  		padding: 0;
+	}
+
+input[type="text"],
+input[type="email"],
+textarea 
+	{
+  		font-family: 'Lucida Grande', Helvetica, Arial, Sans-Serif;
+  		background-color: #eee;
+  		width: 50%;
+  		border: none;
+  		padding: 13px;
+  		border: 2px solid #eee;
+  		border-radius: 5px;
+  		margin-bottom: 10px;
+  		font-size: 16px;
+ 		 outline: none;
+  		transition: border-color .2s;
+	}
+
+input:focus,
+textarea:focus,
+input.fail:focus,
+textarea.fail:focus 
+	{
+  		border-color: #E0A3FF;
+	}
+
+input.fail,
+textarea.fail 
+	{
+  		border-color: #E0A3FF;
+	}
+
+textarea 
+	{
+  		min-height: 200px;
+	}
+
+
+input[type="submit"],
+.button2 
+	{
+  		font-family: 'Lucida Grande', Helvetica, Arial, Sans-Serif;
+  		background: #E0A3FF;
+  		width: 53%;
+  		border-radius: 5px;
+  		color: #fff;
+  		font-weight: bold;
+  		border: none;
+  		cursor: pointer;
+  		padding: 20px;
+  		font-size: 16px;
+  		display: block;
+  		border-bottom: 2px solid #E0A3FF;
+  		outline: none;
+ 		transition: background-color .2s, transform .2s;
+	}
+
+.button2:hover 
+	{
+  		background-color: #B85CE6;
+	}
+
+.button2:active 
+	{
+  		transform: translateY(2px);
+	}
+footer
+	{
+		background-color: #000000;
+		color: #FFFFFF;
+		padding-top: 20px;
+		padding-bottom: 20px;
+		font-size:.80em;
+		font-style: italic;
+		text-align: center;
+		clear: both;
+	}
+/* jquary */
+

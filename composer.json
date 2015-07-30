@@ -1,0 +1,12 @@
+{
+    "name": "alejandra/alejandra",
+    "require": {
+        "monolog/monolog": "^1.15"
+    },
+    "authors": [
+        {
+            "name": "Alejandra",
+            "email": "ale1512@hotmail.com"
+        }
+    ]
+}
