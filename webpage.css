@@ -251,7 +251,7 @@ h2
 .boxColor
 	{
 		background-color: #F0F0F5;
-		height: 250px;
+		height: auto;
 	}
 .boxColor a
 	{
